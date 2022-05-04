@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- 原始gps数据 -->
+  <node name="gps_data" pkg="data_store" type="gps_data" output="screen">  </node>
+  <!-- 东北天gps里程计数据 -->
+  <node name="gps_odom_data" pkg="data_store" type="gps_odom_data" output="screen">  </node>
+  <!-- 原始北西天imu数据 -->
+  <node name="imu_data" pkg="data_store" type="imu_data" output="screen">  </node>
+  <!-- 东北天imu数据 -->
+  <node name="imu_data_enu" pkg="data_store" type="imu_data_enu" output="screen">  </node>
+  <!-- 原始载体坐标系视觉里程计数据 -->
+  <node name="stereo_odometry_data" pkg="data_store" type="stereo_odometry_data" output="screen">  </node>
+  <!-- 东北天视觉里程计数据 -->
+  <node name="stereo_odometry_data_enu" pkg="data_store" type="stereo_odometry_data_enu" output="screen">  </node>
+  <!-- 编码器里程计数据 -->
+  <node name="odom_data" pkg="data_store" type="odom_data" output="screen">  </node>
+  <!-- eskf数据 -->
+  <node name="eskf_odom_data" pkg="data_store" type="eskf_odom_data" output="screen">  </node>
+  <!-- ekf数据 -->
+  <node name="ekf_odom_data" pkg="data_store" type="ekf_odom_data" output="screen">  </node>
+
+</launch>
